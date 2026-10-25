@@ -17,15 +17,15 @@ centralized here.
   - [x] Write the project's outline
   - [x] Write the Context Diagram
   - [x] Write the first User Stories
-  - [] Add acceptance criteria
-  - [] Use standard form for User Stories (I translated from Spanish, LOL)
-  - [] Add non functional requirements
-  - [] Select a frontend...
-  - [] Create the Domain Model
-  - [] Create the Architecture Diagram
-  - [] Start Database modeling (Logic-Relational diagram and Physical diagram)
-  - [] Start modeling the communications between Backend, Database and MQTT Broker
-  - [] Start modeling the MQTT Broker's topics
+  - [ ] Add acceptance criteria
+  - [ ] Use standard form for User Stories (I translated from Spanish, LOL)
+  - [ ] Add non functional requirements
+  - [ ] Select a frontend...
+  - [ ] Create the Domain Model
+  - [ ] Create the Architecture Diagram
+  - [ ] Start Database modeling (Logic-Relational diagram and Physical diagram)
+  - [ ] Start modeling the communications between Backend, Database and MQTT Broker
+  - [ ] Start modeling the MQTT Broker's topics
   - Other development steps.
 
 
