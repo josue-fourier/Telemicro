@@ -18,7 +18,7 @@ centralized here.
   - [x] Write the Context Diagram
   - [x] Write the first User Stories
   - [ ] Add acceptance criteria
-  - [ ] Use standard form for User Stories
+  - [x] Use standard form for User Stories
   - [ ] Split US05 into smaller USs.
   - [ ] Add non functional requirements
   - [ ] Create the Domain Model
@@ -53,24 +53,29 @@ concerns over the other buses, its passengers and drivers. Thinking big (very ea
 ### User Stories
 
 #### US01:
-As User, I want to see any stop and the Estimated Time of Arrival for the next three buses arriving,
-to leave on time for the stop.
+As a User, I want to see any stop and the Estimated Time of Arrival for the next three buses arriving,
+so that I can leave on time for the stop.
+
+**Acceptance Criteria**:
+- Given that I opened the map within the website, when I select a stop in the map, then I want to see the next three buses arriving
+- Given that I opened the map within the website, when I select a stop in the map, then I want to see the number of the buses that take the course 
+of which the stop is part of.
 
 #### US02:
-As Bus, I want to send and receive messages to and from the Administration, to report emergencies and
+As a Bus, I want to send and receive messages to and from the Administration, so that I can report emergencies and
 know the directives from the Administration.
 
-#### US03: As Administrator, I want to view the information of each bus quickly,
-to know its position, status and route. 
+#### US03: As an Administrator, I want to view the information of each bus quickly,
+so that I get to know its position, status and route. 
 
-#### US04: As Administrator, I want to communicate with the buses
-through messaging, to become aware of emergencies and communicate the bus appropriate
+#### US04: As an Administrator, I want to communicate with the buses
+through messaging, so that I become aware of emergencies and communicate the bus appropriate
 directives to follow and or relevant information.
 
-#### US05: As Administrator, I want to view each stablished route, its stops,
+#### US05: As an Administrator, I want to view each stablished route, its stops,
 and buses, as well as relevant statistics like average ETA for stop of a route, route's lenght,
 amount of buses (per route and total), amount of stops (per route and total), and 
-amount of Users (people) watching the stops of a route, to obtain
+amount of Users (people) watching the stops of a route, so that I obtain
 situational awareness of each element for ease of decision taking.
 
 
@@ -80,9 +85,9 @@ will use simulated data like Buses and Users, and will not care about authentica
 
 ### Tech Stack used
   - PostgreSQL: For Data persistency and crunching, as well as management.
-  - Node.js + Express.js: For Backend.
+  - Django: For Backend.
   - Eclipse Mosquitto: For low latency communication between Backend, Buses and Administrators.
   - Frontend?
-  - Hardware: Raspberry Pi 3 for Bus simulation (through Python), ESP32 + GPS for real data gathering (future)
+  - Hardware: Raspberry Pi 3 for Bus simulation (through Python), ESP32 + GPS for real data gathering (in the future)
   - Containerization: Docker. For Ease of development and deployment.
 
