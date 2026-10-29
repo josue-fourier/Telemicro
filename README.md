@@ -1,9 +1,7 @@
 # Telemicro
 
 A project that seeks to showcase Telematics skills through the development 
-of a web application that handles telemetry from buses (micros), showcases an 
-operations/administration panel, messaging between them, and finally give 
-information to users (people) that want to know the ETA for buses for a particular stop.
+of a web application that handles telemetry from buses (micros), showcases an operations/administration panel, messaging between them, and finally give information to users (people) that want to know the ETA for buses for a particular stop.
 
 This project will be slowly growing, but without the help of AI,
 not because of hate, but to master the needed skills on my own. 
@@ -17,7 +15,7 @@ centralized here.
   - [x] Write the project's outline
   - [x] Write the Context Diagram
   - [x] Write the first User Stories
-  - [ ] Add acceptance criteria
+  - [x] Add acceptance criteria
   - [x] Use standard form for User Stories
   - [ ] Split US05 into smaller USs.
   - [ ] Add non functional requirements
@@ -64,19 +62,43 @@ of which the stop is part of.
 #### US02:
 As a Bus, I want to send and receive messages to and from the Administration, so that I can report emergencies and
 know the directives from the Administration.
+**Acceptance Criteria**:
+- Given that I go to my view, when I type the Bus's license plate, then I want to see different options to quickly send messages: delayed, full bus, failure, diversion
+- Given that I access to my view, when I type the Bus's license plate, then I want to see the messages sent from the Administration
 
 #### US03: As an Administrator, I want to view the information of each bus quickly,
 so that I get to know its position, status and route. 
+**Acceptance Criteria**:
+- Given that I access my panel, when I type in my id and password, then I want to select any bus in the city's map
+- Given that I accessed my panel, when I select any bus in the city's map, then I want to see all it's information 
+(driver, path, % of path completed), as well as latest messages
 
 #### US04: As an Administrator, I want to communicate with the buses
 through messaging, so that I become aware of emergencies and communicate the bus appropriate
 directives to follow and or relevant information.
+**Acceptance Criteria**:
+- Given that I accessed my panel, when I select any bus in the city's map, then I want to be able to send him messages
+- Given that I am chatting with a Bus, when I send a message, then I want to se if it arrived or not to the bus
 
-#### US05: As an Administrator, I want to view each stablished route, its stops,
-and buses, as well as relevant statistics like average ETA for stop of a route, route's lenght,
-amount of buses (per route and total), amount of stops (per route and total), and 
-amount of Users (people) watching the stops of a route, so that I obtain
-situational awareness of each element for ease of decision taking.
+#### US05: As an Administrator, I want to view each established route with its stops and buses,
+so that I know what is currently operating in the city.
+**Acceptance Criteria**:
+- Given that I accessed my panel, when I open the routes view, then I want to see the list of established routes.
+- Given that I selected a route, when its details load, then I want to see its stops and the buses currently assigned to it.
+
+#### US06: As an Administrator, I want to see operational statistics per route and for the whole network,
+so that I can assess the state of the service at a glance.
+**Acceptance Criteria**:
+- Given that I selected a route, when its statistics load, then I want to see the route's length, number of stops, number of buses and the average ETA per stop.
+- Given that I am on the overview, when it loads, then I want to see the total number of buses and the total number of stops.
+
+#### US07: As an Administrator, I want to see how many Users are watching each stop of a route,
+so that I can identify where demand is higher and decide where to reinforce service.
+**Acceptance Criteria**:
+- Given that I selected a route, when the demand view loads, then I want to see the number of Users currently watching each of its stops.
+- Given that Users stop watching a stop, when some time has passed, then I want that count to decrease.
+
+
 
 
 ### Known limitations
