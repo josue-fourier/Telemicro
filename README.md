@@ -17,7 +17,7 @@ centralized here.
   - [x] Write the first User Stories
   - [x] Add acceptance criteria
   - [x] Use standard form for User Stories
-  - [ ] Split US05 into smaller USs.
+  - [x] Split US05 into smaller USs.
   - [ ] Add non functional requirements
   - [ ] Create the Domain Model
   - [ ] Create the Architecture Diagram
